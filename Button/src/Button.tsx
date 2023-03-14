@@ -11,23 +11,21 @@ const StyledButton = styled.button`
   cursor: pointer;
   border: ${(props : IStyledProps) => props.border ? props.border : 'none'};
   border-radius: 90px;
-
   background: ${(props : IStyledProps) => props.background ? props.background : '#3772FF'};
   color: ${(props : IStyledProps) => props.color ? props.color : '#FCFCFD'};
   opacity: ${(props: IStyledProps) => props.disabled ? "50%" : "100%"};
-
-  font-family: ${(props: IStyledProps) => props.fontFamily ? props.fontFamily :'DM Sans'};
+  font-family: ${(props: IStyledProps) => props.fontFamily ? props.fontFamily : 'DM Sans'};
   font-style: ${(props: IStyledProps) => props.fontStyle ? props.fontStyle : 'normal'};
   font-weight: ${(props: IStyledProps) => props.fontWeight ? props.fontWeight : 700};
   font-size: ${(props: IStyledProps) => props.fontSize ? props.fontSize : '14px'};
   line-height: ${(props: IStyledProps) => props.lineHeight ? props.lineHeight : '16px'};
   text-align: center;
-
   &:hover{
-    background: ${(props : IStyledProps) => !props.disabled && props.hoverBackground };
+    background: ${(props : IStyledProps) => !props.disabled && `linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), ${props.hoverBackground ? props.hoverBackground : props.background ? props.background : '#3772FF'}`};
     color: ${(props : IStyledProps) => !props.disabled && props.hoverColor };
   }
 `
+
 interface IStyledProps {
   display?: string,
   background?: string,

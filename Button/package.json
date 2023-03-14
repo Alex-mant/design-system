@@ -1,7 +1,7 @@
 {
   "name": "@alexandre_m/design-system_button",
   "version": "0.0.1",
-  "description": "",
+  "description": "Reusable and customizable react button component",
   "main": "index.js",
   "scripts": {},
   "keywords": [
