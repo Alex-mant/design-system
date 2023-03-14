@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const StyledButton = styled.button`
   display: ${(props: IStyledProps) => props.display ? props.display : 'flex'};
@@ -66,7 +67,7 @@ interface IProps {
   },
 }
 
-const Button = ({text, options} : IProps) => {
+export const Button = ({text, options} : IProps) => {
   return (
     <StyledButton 
       display= {options?.display}
@@ -89,5 +90,3 @@ const Button = ({text, options} : IProps) => {
     </StyledButton>
   )
 }
-
-export default Button
