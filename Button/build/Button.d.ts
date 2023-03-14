@@ -16,8 +16,8 @@ interface IProps {
         lineHeight?: string;
         border?: string;
         padding?: string;
-        icon: string;
-        iconAltText: string;
+        icon?: string;
+        iconAltText?: string;
     };
 }
 export declare const Button: ({ text, options }: IProps) => JSX.Element;

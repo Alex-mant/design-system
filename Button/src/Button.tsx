@@ -62,8 +62,8 @@ interface IProps {
     border?: string,
     padding?: string,
     //For the following parameters, don't put them in the tag
-    icon: string,
-    iconAltText: string,
+    icon?: string,
+    iconAltText?: string,
   },
 }
 
