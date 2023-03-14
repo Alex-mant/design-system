@@ -46,25 +46,10 @@ interface IStyledProps {
 }
 interface IProps {
   text: string,
-  options?: {
-    display?: string,
-    background?: string,
-    color?: string,
-    hoverColor?: string,
-    hoverBackground?: string, 
-    disabled?: boolean,
-    iconSide?: string,
-    fontFamily?: string,
-    fontSize?: string,
-    fontStyle?: string,
-    fontWeight?: number,
-    lineHeight?: string,
-    border?: string,
-    padding?: string,
-    //For the following parameters, don't put them in the tag
+  options?: IStyledProps & {
     icon?: string,
     iconAltText?: string,
-  },
+  }
 }
 
 export const Button = ({text, options} : IProps) => {
