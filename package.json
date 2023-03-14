@@ -1,0 +1,28 @@
+{
+  "name": "@alexandre_m/design-system_button",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "react",
+    "typescript",
+    "button"
+  ],
+  "repository": "https://github.com/Alex-mant/design-system/src/button.tsx",
+  "author": {
+    "name": "Mantione Alexandre"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/styled-components": "^5.1.26",
+    "css-loader": "6.7.3",
+    "react-dom": "^18.2.0",
+    "style-loader": "3.3.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.5"
+  }
+}
