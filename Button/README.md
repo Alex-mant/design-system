@@ -1,4 +1,4 @@
-# React Custom Modal
+# React Button Customizable
 
 A simple and reusable Button component for REACT
 
