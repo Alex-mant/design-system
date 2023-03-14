@@ -17,7 +17,7 @@ Or via [yarn](https://github.com/yarnpkg/yarn):
 ```
 yarn add @alexandre_m/design-system_button
 ```
-#### dependencies:
+#### dependencies
     styled-components: ^5.3.5
     
 #### devDependencies
@@ -30,11 +30,24 @@ yarn add @alexandre_m/design-system_button
 
 ## Configuration
 ### You can call the button as a usual component
-in progress
-### Here is the plugin code 
-in progress
+#### Change the component style easily with the parameters.
+#### /!\ The component waits for an object containing the parameters to be modified.
+```js
+  // Example of object
+  const buttonParams = {
+    color: "#FF4554",
+    hoverColor: "#000",
+  }
 
-### Type of props: 
+  const component = () => {
+    return(
+      <Button text={"Click Here"} options={buttonsParams}/>
+    )
+  }
+```
+#### You can find all the modifiable parameters in the "Type of props" section below in the "IStyledProps" interface !
+
+### Type of props
 ```ts
   interface IStyledProps {
     display?: string,
@@ -52,33 +65,15 @@ in progress
     border?: string,
     padding?: string,
   }
+
   interface IProps {
     text: string,
-    options?: {
-      display?: string,
-      background?: string,
-      color?: string,
-      hoverColor?: string,
-      hoverBackground?: string, 
-      disabled?: boolean,
-      iconSide?: string,
-      fontFamily?: string,
-      fontSize?: string,
-      fontStyle?: string,
-      fontWeight?: number,
-      lineHeight?: string,
-      border?: string,
-      padding?: string,
-      //For the following parameters, don't put them in the tag
+    options?: IStyledProps & {
       icon?: string,
       iconAltText?: string,
-    },
+    }
   }
 ```
-
-### Style:
-  in progress
-
 
 ## License
 
