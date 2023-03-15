@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
   display: ${(props: IStyledProps) => props.display ? props.display : 'flex'};
-  flex-direction: ${(props) => props.iconSide === 'left' ? 'row-reverse' : 'row'};
+  flex-direction: ${(props : IStyledProps) => props.iconSide === 'left' ? 'row-reverse' : 'row'};
   justify-content: center;
   align-items: center;
-  padding: ${(props) => props.padding ? props.padding : '12px 16px'};
+  padding: ${(props : IStyledProps) => props.padding ? props.padding : '12px 16px'};
   gap: 12px;
   cursor: pointer;
   border: ${(props : IStyledProps) => props.border ? props.border : 'none'};
