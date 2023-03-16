@@ -10,20 +10,17 @@ const StyledButton = styled.button `
   cursor: pointer;
   border: ${(props) => props.border ? props.border : 'none'};
   border-radius: 90px;
-
   background: ${(props) => props.background ? props.background : '#3772FF'};
   color: ${(props) => props.color ? props.color : '#FCFCFD'};
   opacity: ${(props) => props.disabled ? "50%" : "100%"};
-
   font-family: ${(props) => props.fontFamily ? props.fontFamily : 'DM Sans'};
   font-style: ${(props) => props.fontStyle ? props.fontStyle : 'normal'};
   font-weight: ${(props) => props.fontWeight ? props.fontWeight : 700};
   font-size: ${(props) => props.fontSize ? props.fontSize : '14px'};
   line-height: ${(props) => props.lineHeight ? props.lineHeight : '16px'};
   text-align: center;
-
   &:hover{
-    background: ${(props) => !props.disabled && props.hoverBackground};
+    background: ${(props) => !props.disabled && `linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), ${props.hoverBackground ? props.hoverBackground : props.background ? props.background : '#3772FF'}`};
     color: ${(props) => !props.disabled && props.hoverColor};
   }
 `;
